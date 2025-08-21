@@ -1,7 +1,9 @@
+import Aboutcompo from "../Components/Aboutcompo/Aboutcompo"
+
 const Aboutpage = () => {
   return (
     <>
-      <h1>About Page</h1>
+    <Aboutcompo/>
     </>
   )
 }

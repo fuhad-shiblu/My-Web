@@ -1,7 +1,9 @@
+import Servicescompo from "../Components/Servicescompo/Servicescompo"
+
 const Servicespage = () => {
   return (
     <>
-      <h1>Services Page</h1>
+    <Servicescompo/>
     </>
   )
 }
