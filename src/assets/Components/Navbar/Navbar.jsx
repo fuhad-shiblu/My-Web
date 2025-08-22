@@ -13,7 +13,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 const Navbar = () => {
   return (
     <>
-    <nav className='flex justify-between items-center mt-5 bg-[#f0f0f0] px-2 py-3 rounded-lg'>
+    <nav className='md:flex justify-between items-center mt-5 bg-[#f0f0f0] px-2 py-3 rounded-lg hidden'>
         {/* ===== Navbar Main Logo Part ===== */}
         <Link to={'/'}><img className='w-[50px] h-[50px] rounded-full' src={logo} alt="" /></Link>
 
@@ -27,9 +27,6 @@ const Navbar = () => {
             <li><NavLink to="/testimonial" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><MdOutlineReviews className='text-xl'/>testimonial</NavLink></li>
         </ul>
         <Link className='text-lg capitalize font-semibold px-3 py-2 bg-[#FB4141] text-white rounded-lg border-2 border-solid border-[#FB4141] hover:text-[#FB4141] hover:bg-transparent transition-all md:flex items-center gap-1 hidden' to={'/projects'}><FaDiagramProject className='text-xl'/>my portfolio</Link>
-
-        {/* ===== Responsive Mobile Menu Part ===== */}
-        <RiMenu4Fill className='text-3xl hover:text-[#FF0066] transition-all block md:hidden'/>
     </nav>
     </>
   )

@@ -12,7 +12,7 @@ const Homecompo = () => {
             <p className="text-black font-bold text-3xl capitalize w-[300px]">hi, i'm<span className="block mt-5 text-2xl text-black font-medium"> <span className="capitalize text-[#FB4141]">fuhad hasan shiblu</span><span className="mt-5 block text-lg font-bold text-[#303030]">front-end web developer</span><span className='mt-5 block text-sm'>A passionate React developer using HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, ReactJS, Redux, Firebase etc.</span></span></p>
             <div className="flex items-center gap-5">
                 <Link className='text-lg capitalize px-3 py-2 bg-[#FB4141] flex items-center gap-1 text-white rounded-xl border-2 border-solid border-[#FB4141] transition-all hover:bg-transparent hover:text-[#FB4141]' to={'/contact'}>hire me<FaChevronRight className='text-xl'/></Link>
-                <Link className='text-lg capitalize px-3 py-2 bg-[#FB4141] text-white rounded-xl border-2 border-solid border-[#FB4141] transition-all hover:bg-transparent hover:text-[#FB4141] flex items-center gap-1' to={'#'}><LuDownload className='text-xl'/>download resume</Link>
+                <Link className='text-lg capitalize px-3 py-2 bg-[#FB4141] text-white rounded-xl border-2 border-solid border-[#FB4141] transition-all hover:bg-transparent hover:text-[#FB4141] flex items-center gap-1' to={'https://drive.usercontent.google.com/u/0/uc?id=1UB_A8933MRgMqQum4TS1IvHsCZ7zjZRa&export=download'}><LuDownload className='text-xl'/>download resume</Link>
             </div>
         </div>
         <div className="w-[300px] h-[300px] rounded-full border-[5px] hover:border-solid overflow-hidden hover:border-[#484848] border-[#FB4141] border-dashed transition-all hover:bg-[#b0b0b0]">

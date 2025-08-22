@@ -1,0 +1,3 @@
+.projectsCard:hover .proCardChild{
+    @apply rotate-0 opacity-[1];
+}

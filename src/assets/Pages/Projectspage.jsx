@@ -1,7 +1,9 @@
+import Projectscompo from "../Components/Projectscompo/Projectscompo"
+
 const Projectspage = () => {
   return (
     <>
-      <h1>Projects Page</h1>
+    <Projectscompo/>
     </>
   )
 }
