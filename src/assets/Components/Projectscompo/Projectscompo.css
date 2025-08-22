@@ -1,3 +1,6 @@
 .projectsCard:hover .proCardChild{
     @apply rotate-0 opacity-[1];
 }
+.projectsCard:hover .projectsCrdTxt{
+    @apply opacity-0 bottom-[-10px];
+}

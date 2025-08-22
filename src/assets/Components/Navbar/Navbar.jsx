@@ -1,32 +1,27 @@
 import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../../../public/img/profile.png'
-import { GoHome } from "react-icons/go";
-import { FaRegUser } from "react-icons/fa";
-import { GoGear } from "react-icons/go";
-import { GrProjects } from "react-icons/gr";
-import { SiMaildotru } from "react-icons/si";
-import { MdOutlineReviews } from "react-icons/md";
-import { FaDiagramProject } from "react-icons/fa6";
 import { RiMenu4Fill } from "react-icons/ri";
 
 const Navbar = () => {
   return (
     <>
-    <nav className='md:flex justify-between items-center mt-5 bg-[#f0f0f0] px-2 py-3 rounded-lg hidden'>
+    <nav className='flex justify-between items-center mt-5'>
         {/* ===== Navbar Main Logo Part ===== */}
         <Link to={'/'}><img className='w-[50px] h-[50px] rounded-full' src={logo} alt="" /></Link>
 
         {/* ===== Navbar Main Menu Part Start ===== */}
-        <ul className='md:flex gap-5 capitalize text-sm font-medium text-[#757575] hidden'>
-            <li><NavLink to="/" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><GoHome className='text-xl'/>home</NavLink></li>
-            <li><NavLink to="/about" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><FaRegUser className='text-xl'/>about</NavLink></li>
-            <li><NavLink to="/services" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><GoGear className='text-xl'/>services</NavLink></li>
-            <li><NavLink to="/projects" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><GrProjects className='text-xl'/>projects</NavLink></li>
-            <li><NavLink to="/contact" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><SiMaildotru className='text-xl'/>contact</NavLink></li>
-            <li><NavLink to="/testimonial" className={({ isActive }) => isActive ? "hover:text-white text-white rounded-xl transition-all flex flex-col items-center gap-1 bg-[#FB4141] px-5 py-2" : "hover:text-white rounded-xl transition-all flex flex-col items-center gap-1 hover:bg-[#FB4141] px-5 py-2"}><MdOutlineReviews className='text-xl'/>testimonial</NavLink></li>
+        <ul className='md:flex gap-10 capitalize text-sm font-medium text-[#757575] hidden'>
+            <li><NavLink to="/" className={({ isActive }) => isActive ? "text-[#b0f221] hover:text-[#b0f221] transition-all relative" : "text-white hover:text-[#b0f221] transition-all relative"}>home</NavLink></li>
+            <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-[#b0f221] hover:text-[#b0f221] transition-all relative" : "text-white hover:text-[#b0f221] transition-all relative"}>about</NavLink></li>
+            <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-[#b0f221] hover:text-[#b0f221] transition-all relative" : "text-white hover:text-[#b0f221] transition-all relative"}>services</NavLink></li>
+            <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-[#b0f221] hover:text-[#b0f221] transition-all relative" : "text-white hover:text-[#b0f221] transition-all relative"}>contact</NavLink></li>
+            <li><NavLink to="/projects" className={({ isActive }) => isActive ? "text-[#b0f221] hover:text-[#b0f221] transition-all relative" : "text-white hover:text-[#b0f221] transition-all relative"}>projects</NavLink></li>
         </ul>
-        <Link className='text-lg capitalize font-semibold px-3 py-2 bg-[#FB4141] text-white rounded-lg border-2 border-solid border-[#FB4141] hover:text-[#FB4141] hover:bg-transparent transition-all md:flex items-center gap-1 hidden' to={'/projects'}><FaDiagramProject className='text-xl'/>my portfolio</Link>
+        <div className="flex gap-5">
+          <Link className='hidden md:block text-sm capitalize font-semibold px-2 py-1 text-[#b0f221] rounded-lg border-2 border-solid border-[#b0f221] hover:border-[#b0f221] hover:text-[#4b4b4b] hover:bg-[#b0f221] transition-all' to={'/projects'}>hire me</Link>
+          <button className='text-2xl text-white border-[1px] border-solid border-white rounded-lg px-2 py-1 block md:hidden active:border-[#b0f221] transition-all active:text-[#b0f221]'><RiMenu4Fill/></button>
+        </div>
     </nav>
     </>
   )

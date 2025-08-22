@@ -1,0 +1,7 @@
+nav ul li a::after{
+    content: '';
+    @apply w-0 h-[1px] bg-[#6dec47] absolute bottom-0 left-0 transition-all;
+}
+nav ul li a:hover::after{
+    @apply w-full;
+}

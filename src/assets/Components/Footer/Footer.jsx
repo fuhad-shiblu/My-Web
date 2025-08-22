@@ -5,10 +5,10 @@ const Footer = () => {
     const creditsyear = new Date().getFullYear()
   return (
     <>
-    <footer className="mt-[50px] bg-[#f0f0f0] px-2 py-3 rounded-lg flex items-center gap-1 justify-center mb-20 md:mb-0">
-        <p className="text-sm font-medium text-[#363636] capitalize">&#169;{creditsyear},</p>
-        <Link className="text-sm font-bold text-[#363636] capitalize hover:underline" to={'https://github.com/fuhad-shiblu'} target="_blank">fuhad hasan shiblu</Link>
-        <p className="text-sm font-medium text-[#363636] capitalize">| all rights reserved</p>
+    <footer className="mt-[100px] p-5 flex items-center gap-1 justify-center">
+        <p className="text-sm font-medium text-white capitalize">&#169;{creditsyear},</p>
+        <Link className="text-sm font-bold text-white capitalize hover:underline" to={'https://github.com/fuhad-shiblu'} target="_blank">fuhad hasan shiblu</Link>
+        <p className="text-sm font-medium text-white capitalize">| all rights reserved</p>
     </footer>
     </>
   )
