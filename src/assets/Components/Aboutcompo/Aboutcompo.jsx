@@ -60,6 +60,34 @@ const Aboutcompo = () => {
                 <img src={html} alt="HTML" />
                 <h3 className='text-xs font-semibold text-white'>HTML</h3>
             </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={css} alt="CSS" />
+                <h3 className='text-xs font-semibold text-white'>CSS</h3>
+            </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={js} alt="JS" />
+                <h3 className='text-xs font-semibold text-white'>JS</h3>
+            </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={react} alt="ReactJS" />
+                <h3 className='text-xs font-semibold text-white'>ReactJS</h3>
+            </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={redux} alt="Redux" />
+                <h3 className='text-xs font-semibold text-white'>Redux</h3>
+            </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={bootstrap} alt="Bootstrap" />
+                <h3 className='text-xs font-semibold text-white'>Bootstrap</h3>
+            </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={tailwind} alt="Tailwind CSS" />
+                <h3 className='text-xs font-semibold text-white'>Tailwind CSS</h3>
+            </div>
+            <div className="w-[150px] h-[200px] rounded-xl border-[1px] border-solid border-[#929292] bg-[#505050] transition-all hover:border-[#b0f221] p-5 flex gap-3 flex-col justify-center items-center overflow-hidden">
+                <img src={firebase} alt="Firebase" />
+                <h3 className='text-xs font-semibold text-white'>Firebase</h3>
+            </div>
         </div>
       </div>
 

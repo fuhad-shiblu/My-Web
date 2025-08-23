@@ -23,3 +23,19 @@ body{
     min-height: 100vh;
     background: #181818;
 }
+/* Target all scrollable elements */
+::-webkit-scrollbar {
+  width: 1px; /* Width of the vertical scrollbar */
+  height: 1px; /* Height of the horizontal scrollbar */
+}
+
+/* Track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle (the draggable thumb) */
+::-webkit-scrollbar-thumb {
+  background: #b0f221;
+  border-radius: 10px;
+}
